@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ac-docs-ingress
+spec:
+  rules:
+  - host: docs.affectivecloud.cn
+    http:
+      paths:
+      - path: /v2
+        backend:
+          serviceName: ac-docs-v2
+          servicePort: 4000

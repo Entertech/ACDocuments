@@ -1,13 +1,15 @@
-FROM node
-WORKDIR /build
+FROM node:12.7.0
 
 EXPOSE 4000
 
-RUN npm install gitbook -g;
-RUN npm install gitbook-cli -g;
-
 WORKDIR /build/work
 
-RUN gitbook init
+RUN npm -registry https://registry.npm.taobao.org install gitbook -g \
+&& npm -registry https://registry.npm.taobao.org install gitbook-cli -g \
+&& gitbook init
 
-CMD ["gitbook", "serve"]
+COPY work .
+
+RUN gitbook install
+
+CMD gitbook serve

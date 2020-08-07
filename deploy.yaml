@@ -1,0 +1,66 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ac-docs
+  labels:
+    app: ac-docs
+    service: ac-docs
+spec:
+  ports:
+  - port: 4000
+    name: http
+  selector:
+    app: ac-docs
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: ac-docs
+  labels:
+    account: ac-docs
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ac-docs-v2
+  labels:
+    app: ac-docs
+    version: v2
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ac-docs
+      version: v2
+  template:
+    metadata:
+      labels:
+        app: ac-docs
+        version: v2
+    spec:
+      serviceAccountName: ac-docs
+      imagePullSecrets:
+      - name: registry
+      containers:
+      - name: ac-docs
+        image: registry.cn-shanghai.aliyuncs.com/affectivecloud/ac-docs:2.0.0
+        imagePullPolicy: Always
+        volumeMounts:
+        - name: tz-config
+          mountPath: /etc/localtime
+          readOnly: true
+        ports:
+        - containerPort: 4000
+          name: http
+          protocol: HTTP
+        resources:
+          requests:
+            memory: 300Mi
+            cpu: 100m
+          limits:
+            memory: 350Mi
+            cpu: 700m
+      volumes:
+      - name: tz-config
+        hostPath:
+          path: /etc/localtime
