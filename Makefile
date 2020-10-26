@@ -4,12 +4,12 @@ export ENV = dev
 
 ifeq (${ENV}, dev)
 	export ENVFLAG = dev
- 	export TAG = 2.1.0
+ 	export TAG = 2.1.1
  	export REGISTRY = harbor-register.entertech.cn/enter
 else
 	ifeq (${ENV}, release)
 		export ENVFLAG = release
-		export TAG = 2.1.0
+		export TAG = 2.1.1
 		export REGISTRY = registry.cn-shanghai.aliyuncs.com/affectivecloud
 	else
 		$(error "Error: ENV(${ENV}) undefined.")
