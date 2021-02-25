@@ -1,10 +1,8 @@
-# 回车情感云计算平台开发文档
+# Entertech Affective Cloud Develop Documents
 
-## 简介
-介绍情感云平台架构、平台能力和平台的协议及接入方式。
+## Introduction
+Introduce the affetive cloud platform architecture, platform capabilities and the platform protocols.
 
-## 文档地址
+## Document web
 
-https://www.affectivecloud.cn
-
-https://www.affectivecloud.com
+[https://www.affectivecloud.com](https://www.affectivecloud.com)

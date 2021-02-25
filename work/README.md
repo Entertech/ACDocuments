@@ -1,48 +1,34 @@
-# 回车情感云计算介绍
+# Entertech Affective Cloud Introduction
 
-## 架构简介
-回车情感云计算平台可以通过多维生理数据（包括脑电、心率等）的综合分析，实时反馈生理、情感状态。
+# Architecture Introduction
+Entertech affective cloud computing platform can provide real-time feedback on affection through comprehensive analysis of multi-dimensional bio-data (including EEG, heart rate, etc.).
 
-![情感云计算架构](media/%E6%83%85%E6%84%9F%E4%BA%91%E8%AE%A1%E7%AE%97%E6%9E%B6%E6%9E%84.png)
+![Entertech affective cloud architecture](media/%E6%83%85%E6%84%9F%E4%BA%91%E8%AE%A1%E7%AE%97%E6%9E%B6%E6%9E%84.png)
+Hosts (e.g. VR devices, cell phones, PCs, etc.) connect to the Flowtime headband  via Bluetooth to control its monitoring of bio-data. Integrate our affective cloud computing interface in the app, send the collected bio-data to the cloud, and the cloud will return the app's analyzed affective calculation value through algorithm analysis.
 
-主机（如 VR 设备、手机、PC 等）通过蓝牙、板载串口（深度合作，板载集成）等方式来连接回车的生物电采集模块，控制其采集生物电。在 app 中集成我们的情感云计算接口，将采集到的生物电数据发送到云端，云端通过算法分析后返回 app 分析后的情感计算值。
+At present, the Affective Cloud has already achieved the calculation of attention, relaxation value, stress level, pleasure level and other related calculations, and more affective calculation capabilities will be developed one after another.
 
-现回车情感云计算已实现注意力、放松度值、压力水平、愉悦度等相关计算，后续将会陆续开发更多情感计算的能力。
+# About Flowtime Headband
 
-## 硬件模块接入
+## Flowtime operating documentation
+For documentation on operating Flowtime
 
-### 蓝牙
-将回车生物电采集模块作为外设，通过蓝牙和主机连接，实现快速接入。
+* [How to connect Flowtime headband with the app?](https://www.notion.so/How-to-connect-Flowtime-headband-with-the-app-a0808b2d99b74e65b9bcd6e85f5f6c97)
+* [I can't connect the headband with the app.](https://www.notion.so/I-can-t-connect-the-headband-with-the-app-1ae10dc7fe1049c4953fc879f9042730)
 
-#### 蓝牙模块操作文档
-蓝牙硬件模块的相关操作文档，见左侧导航栏中的蓝牙采集模块。
-* [操作说明](./📲蓝牙采集模块/回车生物电蓝牙采集模块操作说明.html)
-* [注意事项](./📲蓝牙采集模块/回车蓝牙生物电采集模块使用注意事项.html)
+Look for more help in our [Flowtime Help Center](https://www.notion.so/Flowtime-Help-Center-b151d8677e5c41d8af6364f44fb93369).
 
-#### 蓝牙开发和蓝牙 SDK
-你可以通过我们的标准蓝牙开发文档，在有蓝牙连接功能的设备上开发蓝牙服务。如果你的平台刚好是 iOS 或者 Android ，也可以使用我们已经开发好的蓝牙 SDK 实现快速的接入。SDK 中已经有开发好可供测试的 demo。
+## Development and Bluetooth SDK
+You can develop Bluetooth services on devices that have Bluetooth connectivity through our standard Bluetooth development documentation. If your platform happens to be iOS or Android, you can also use our already developed Bluetooth SDK for quick integration. demos are already developed and available for testing in the SDK.
 
-* [回车蓝牙生物电采集模块通信协议](https://shimo.im/docs/80f5ce5b32ee49eb/)
-* 回车蓝牙生物电采集模块 SDK
-	* [蓝牙 iOS SDK](https://github.com/EnterTech/Enter-Biomodule-BLE-iOS-SDK)
-	* [蓝牙 Android SDK](https://github.com/EnterTech/Enter-Biomodule-BLE-Android-SDK)
-   
-### 板载串口
-省去供电、蓝牙等模块，直接板载集成，深度合作。
+* [Bluetooth Module Communication Protocol](https://shimo.im/docs/80f5ce5b32ee49eb/)
+* The Flowtime Bluetooth/Device Management SDK
+	* [Bluetooth iOS SDK](https://github.com/EnterTech/Enter-Biomodule-BLE-iOS-SDK)
+	* [Bluetooth Android SDK](https://github.com/EnterTech/Enter-Biomodule-BLE-Android-SDK)
 
-![板载串口通信架构](media/%E6%9D%BF%E8%BD%BD%E4%B8%B2%E5%8F%A3%E9%80%9A%E4%BF%A1%E6%9E%B6%E6%9E%84.png)
+## Affective cloud computing server-side interface
 
-1.	通过控制指令控制硬件模块功能的启停；
-2.	硬件模块根据控制指令，采集数据并回传给 app；
-3.	App 接收到数据包，按照脑电、心率、佩戴监测等不同数据包进行转换、拼接，打包成可上传的数据包；
-4.	将处理后的脑电、心率、佩戴检测数据包通过各自的数据接口上传到情感云。
+The affective cloud computing server-side interface provides basic bio-data analysis capabilities including brain waves, heart rate, etc. and advanced affective analysis capabilities such as attention and pleasure. See [Platform Capabilities]() for specific capability descriptions.
 
-板载方案需要合作定制，相关通信协议合作确定后提供。
-
-## 情感云计算服务端接口
-
-情感云服务端接口提供包括脑电波、心率等基础的生物数据分析能力和注意力、情绪愉悦度等高级情感分析能力。具体的能力介绍参见[平台能力](./平台能力.html)章节。
-
-![回车情感云服务概要](media/%E6%83%85%E6%84%9F%E4%BA%91%E6%8E%A5%E5%8F%A3.png)
-
+![Affective Cloud Service Summary](media/%E6%83%85%E6%84%9F%E4%BA%91%E6%8E%A5%E5%8F%A3.png)
 

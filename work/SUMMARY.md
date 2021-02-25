@@ -3,17 +3,6 @@
 * [更新日志](更新日志.md)
 * [平台介绍](README.md)
 * [平台能力](平台能力.md)
-* ☁️数据说明
-    * [1. 脑电波（EEG）](☁️数据说明/1. 脑电波（EEG）.md)
-    * [2. 心率（HR）](☁️数据说明/2. 心率（HR）.md)
-    * [3. 注意力（Attention）](☁️数据说明/3. 注意力（Attention）.md)
-    * [4. 放松度（Relaxation）](☁️数据说明/4. 放松度（Relaxation）.md)
-    * [5. 压力水平（Pressure）](☁️数据说明/5. 压力水平（Pressure）.md)
-    * [6. 愉悦度（Pleasure）](☁️数据说明/6. 愉悦度（Pleasure）.md)
-    * [7. 激活度（Arousal）](☁️数据说明/7. 激活度（Arousal）.md)
-    * [8. 睡眠（Sleep）](☁️数据说明/8. 睡眠（Sleep）.md)
-    * [9. 儿童注意力（Attention CHD）](☁️数据说明/9. 儿童注意力（Attention CHD）.md)
-    * [10. 儿童放松度（Relaxation CHD）](☁️数据说明/10. 儿童放松度（Relaxation CHD）.md)
 * 🎙接口协议
     * [1. 综述](🎙接口协议/1. 综述.md)
     * [2. 协议格式](🎙接口协议/2. 协议格式.md)
