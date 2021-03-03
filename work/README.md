@@ -1,34 +1,48 @@
 # Entertech Affective Cloud Introduction
 
 # Architecture Introduction
-Entertech affective cloud computing platform can provide real-time feedback on affection through comprehensive analysis of multi-dimensional bio-data (including EEG, heart rate, etc.).
+Entertech affective cloud computing platform can provide real-time feedback on affection through a comprehensive analysis of multi-dimensional bio-data (including EEG, heart rate, etc.).
 
-![Entertech affective cloud architecture](media/%E6%83%85%E6%84%9F%E4%BA%91%E8%AE%A1%E7%AE%97%E6%9E%B6%E6%9E%84.png)
-Hosts (e.g. VR devices, cell phones, PCs, etc.) connect to the Flowtime headband  via Bluetooth to control its monitoring of bio-data. Integrate our affective cloud computing interface in the app, send the collected bio-data to the cloud, and the cloud will return the app's analyzed affective calculation value through algorithm analysis.
+Hosts (e.g. VR devices, cell phones, PCs, etc.) connect to the bio-sensing device(e.g., Flowtime headband) via Bluetooth to control its monitoring of bio-data. Integrate our affective cloud computing interface in the app, send the bio-data to the cloud, and the cloud will return the app's analyzed affective computing value through algorithm analysis.
 
-At present, the Affective Cloud has already achieved the calculation of attention, relaxation value, stress level, pleasure level and other related calculations, and more affective calculation capabilities will be developed one after another.
+![Entertech Affective Computing Cloud Structure](media/16147589532397.jpg)
 
-# About Flowtime Headband
+At present, the Affective Cloud has already achieved the analysis of attention, relaxation value, pressure level, pleasure level, and other related computing, and more affective computing capabilities will be developed one after another.
 
-## Flowtime operating documentation
-For documentation on operating Flowtime
+# Glossary
+
+* [Brainwave （EEG）](https://www.notion.so/Brainwave-EEG-b3a44e9eb01549c29da1d8b2cc7bc08d)
+* [Brainwave Rhythms](https://www.notion.so/Brainwave-Rhythms-4cdadda14a69424790c2d7913ad775ff)
+* [Heart Rate](https://www.notion.so/Heart-Rate-4d64215ac50f4520af7ff516c0f0e00b)
+* [HRV](https://www.notion.so/HRV-80f6c62658f948cabca943d0e11ee429)
+* [Attention](https://www.notion.so/Attention-84fef81572a848efbf87075ab67f4cfe)
+* [Relaxation](https://www.notion.so/Relaxation-c9e3b39634a14d2fa47eaed1d55d872b)
+* [Pressure](https://www.notion.so/Pressure-ee57f4590373442b9107b7ce665e1253)
+* [Breath Coherence](https://www.notion.so/Breath-Coherence-783f1d77aa1148e5a8ddcfc9454dd008)
+
+# Bio-sensing device(Flowtime Headband)
+
+For documentation on operating Flowtime:
 
 * [How to connect Flowtime headband with the app?](https://www.notion.so/How-to-connect-Flowtime-headband-with-the-app-a0808b2d99b74e65b9bcd6e85f5f6c97)
 * [I can't connect the headband with the app.](https://www.notion.so/I-can-t-connect-the-headband-with-the-app-1ae10dc7fe1049c4953fc879f9042730)
 
 Look for more help in our [Flowtime Help Center](https://www.notion.so/Flowtime-Help-Center-b151d8677e5c41d8af6364f44fb93369).
 
-## Development and Bluetooth SDK
-You can develop Bluetooth services on devices that have Bluetooth connectivity through our standard Bluetooth development documentation. If your platform happens to be iOS or Android, you can also use our already developed Bluetooth SDK for quick integration. demos are already developed and available for testing in the SDK.
+# Platform capabilities
+We now offer the bio-data analysis service and the affective computing service. The bio-data analysis service includes analysis of brainwaves and heart rate, providing values such as brainwave rhythm and HRV. The affective computing service provides values including attention, relaxation, etc.
 
-* [Bluetooth Module Communication Protocol](https://shimo.im/docs/80f5ce5b32ee49eb/)
-* The Flowtime Bluetooth/Device Management SDK
-	* [Bluetooth iOS SDK](https://github.com/EnterTech/Enter-Biomodule-BLE-iOS-SDK)
-	* [Bluetooth Android SDK](https://github.com/EnterTech/Enter-Biomodule-BLE-Android-SDK)
+Both services offer both real-time calculations and data report after a period of use.
 
-## Affective cloud computing server-side interface
+See [Platform capabilities](/Platform capabilities.html) for details.
 
-The affective cloud computing server-side interface provides basic bio-data analysis capabilities including brain waves, heart rate, etc. and advanced affective analysis capabilities such as attention and pleasure. See [Platform Capabilities]() for specific capability descriptions.
+# Development Resources
+## Development resources for iOS and Android Platform
+If your platform happens to be iOS or Android, you can also use our already developed Bluetooth SDK for quick integration. demos are already developed and available for testing in the SDK. Also, you can develop Bluetooth services on devices that have Bluetooth connectivity through our standard Bluetooth development documentation. 
 
-![Affective Cloud Service Summary](media/%E6%83%85%E6%84%9F%E4%BA%91%E6%8E%A5%E5%8F%A3.png)
+See [Development resources for iOS and Android Platform](Development resources for iOS and Android Platform.md.html) for details.
+
+## Affective cloud protocol
+The SDK we provide for iOS/Android has integrated the WebSocket operation for connecting with our server. But if you need to develop another platform client or just want to know the details of affective cloud computing protocol, you can see [Affective Cloud Protocol](Affective Cloud Protocol/1. Summary.html).
+
 

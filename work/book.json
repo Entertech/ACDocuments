@@ -1,8 +1,8 @@
 {
-    "title": "回车情感云开发文档",
+    "title": "Development Documents for Entertech Affetive Cloud",
     "author": "Entertech",
-    "description": "回车情感云计算平台以脑电为基础，结合心率、皮肤电导率等多维传感器，实现对人体健康的监测以及对专注度、疲劳度、情绪情感等状态的识别。",
-    "language": "zh-hans",
+    "description": "The affective cloud platform is based on EEG, combined with multi-dimensional sensors such as heart rate, to achieve monitoring of human health and identification of states such as attention, relaxation and pressure.",
+    "language": "en",
     "gitbook": "3.2.3",
     "plugins": [
         "-sharing",
@@ -30,24 +30,29 @@
         "themeFexa":{
             "nav":[
                 {
-                    "url":"https://www.entertech.cn",
+                    "url":"https://www.entertech.cn/en/home.html",
                     "target":"_blank",
-                    "name": "回车官网"
+                    "name": "Entertech Website"
                 },
                 {
-                    "url":"https://github.com/Entertech/Enter-Biomodule-Demo-Android",
+                    "url":"https://github.com/Entertech/Enter-AffectiveCloud-Demo-Android",
                     "target":"_blank",
-                    "name": "Android API Demo"
+                    "name": "Android Demo"
+                },
+                {
+                    "url":"https://github.com/Entertech/Enter-AffectiveCloud-Demo-iOS",
+                    "target":"_blank",
+                    "name": "iOS Demo"
                 },
                 {
                     "url":"https://github.com/Entertech/Enter-Biomodule-BLE-iOS-SDK",
                     "target":"_blank",
-                    "name": "蓝牙 iOS SDK"
+                    "name": "iOS Device SDK"
                 },
                 {
                     "url":"https://github.com/Entertech/Enter-Biomodule-BLE-Android-SDK",
                     "target":"_blank",
-                    "name": "蓝牙 Android SDK"
+                    "name": "Android Device SDK"
                 }
             ]
         }
@@ -59,26 +64,26 @@
         "flexible-alerts": {
             "style": "flat",
             "note": {
-                "label": "注意"
+                "label": "Note"
             },
             "tip": {
-                "label": "提示"
+                "label": "Tips"
             },
             "warning": {
-                "label": "警告"
+                "label": "Warning"
             },
             "danger": {
-                "label": "危险"
+                "label": "Danger"
             }
         },
         "theme-fexa":{
-            "search-placeholder":"输入关键字搜索",
+            "search-placeholder":"Input keywords",
             "logo":"./logo.png",
             "favicon": "./favicon.png"
         },
         "tbfed-pagefooter": {
-            "copyright":"© Entertech 2019",
-            "modify_label": "该文件修订时间：",
+            "copyright":"© Entertech 2021",
+            "modify_label": "Modified time：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         }
     },

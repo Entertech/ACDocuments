@@ -1,16 +1,12 @@
-# Summary
+# Development Documents for Entertech Affetive Cloud
 
-* [更新日志](更新日志.md)
-* [平台介绍](README.md)
-* [平台能力](平台能力.md)
-* 🎙接口协议
-    * [1. 综述](🎙接口协议/1. 综述.md)
-    * [2. 协议格式](🎙接口协议/2. 协议格式.md)
-    * [3. 会话协议](🎙接口协议/3. 会话协议.md)
-    * [4. 生物数据基础分析服务协议](🎙接口协议/4. 生物数据基础分析服务协议.md)
-    * [5. 情感计算服务协议](🎙接口协议/5. 情感计算服务协议.md)
-    * [6. ErrCode](🎙接口协议/6. ErrCode.md)
-* 📲蓝牙采集模块
-    * [回车生物电蓝牙采集模块操作说明](📲蓝牙采集模块/回车生物电蓝牙采集模块操作说明.md)
-    * [回车蓝牙生物电采集模块使用注意事项](📲蓝牙采集模块/回车蓝牙生物电采集模块使用注意事项.md)
+* [Platform Capabilities](Platform capabilities.md)
+* [Development Resources](Development resources for iOS and Android Platform.md)
+- Affective Cloud Protocol
+  * [1. Summary](Affective Cloud Protocol/1. Summary.md)
+  * [2. Basic structure of the Protocol](Affective Cloud Protocol/2. Basic structure of the Protocol.md)
+  * [3. Session protocol](Affective Cloud Protocol/3. Session protocol.md)
+  * [4. Bio-data analysis service protocol](Affective Cloud Protocol/4. Bio-data analysis service protocol.md)
+  * [5. Affective cloud service protocol](Affective Cloud Protocol/5. Affective cloud service protocol.md)
+  * [6. ErrCode](Affective Cloud Protocol/6. ErrCode.md)
 
