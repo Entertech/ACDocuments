@@ -2,7 +2,7 @@
     "title": "Development Documents for Entertech Affetive Cloud",
     "author": "Entertech",
     "description": "The affective cloud platform is based on EEG, combined with multi-dimensional sensors such as heart rate, to achieve monitoring of human health and identification of states such as attention, relaxation and pressure.",
-    "language": "en",
+    "language": "eng",
     "gitbook": "3.2.3",
     "plugins": [
         "-sharing",

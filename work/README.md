@@ -22,7 +22,7 @@ At present, the Affective Cloud has already achieved the analysis of attention, 
 
 # Bio-sensing device(Flowtime Headband)
 
-For documentation on operating Flowtime:
+For documents on operating Flowtime:
 
 * [How to connect Flowtime headband with the app?](https://www.notion.so/How-to-connect-Flowtime-headband-with-the-app-a0808b2d99b74e65b9bcd6e85f5f6c97)
 * [I can't connect the headband with the app.](https://www.notion.so/I-can-t-connect-the-headband-with-the-app-1ae10dc7fe1049c4953fc879f9042730)
