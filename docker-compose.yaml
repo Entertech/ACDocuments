@@ -1,0 +1,8 @@
+version: '3.7'
+
+services:
+
+  ac-docs:
+    image: 671277380155.dkr.ecr.us-west-2.amazonaws.com/affectivecloud/ac-docs${ENVFLAG}:${VERSION}
+    build:
+      context: .

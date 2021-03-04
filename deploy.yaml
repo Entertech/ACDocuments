@@ -1,0 +1,59 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ac-docs
+  namespace: ac
+  labels:
+    app: ac-docs
+    service: ac-docs
+spec:
+  ports:
+  - port: 4000
+    name: http
+  selector:
+    app: ac-docs
+    version: v2
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ac-docs-v2
+  namespace: ac
+  labels:
+    app: ac-docs
+    version: v2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ac-docs
+      version: v2
+  template:
+    metadata:
+      labels:
+        app: ac-docs
+        version: v2
+    spec:
+      containers:
+      - name: ac-docs
+        image: 671277380155.dkr.ecr.us-west-2.amazonaws.com/affectivecloud/ac-docs:2.2.1
+        imagePullPolicy: Always
+        volumeMounts:
+        - name: tz-config
+          mountPath: /etc/localtime
+          readOnly: true
+        ports:
+        - containerPort: 4000
+          name: http
+          protocol: HTTP
+        resources:
+          requests:
+            memory: 100Mi
+            cpu: 100m
+          limits:
+            memory: 150Mi
+            cpu: 300m
+      volumes:
+      - name: tz-config
+        hostPath:
+          path: /etc/localtime
