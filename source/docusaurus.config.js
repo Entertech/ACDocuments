@@ -1,8 +1,8 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-    title: '情感云平台开发文档',
+    title: 'Development Documents for Entertech Affective Cloud',
     tagline: 'Affective Cloud Headset boost brain power in 1 minute.',
-    url: 'https://docs.affectivecloud.cn',
+    url: 'https://docs.affectivecloud.com',
     baseUrl: '/',
     onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
@@ -11,14 +11,14 @@ module.exports = {
     projectName: 'affectivecloud', // Usually your repo name.
     themeConfig: {
         algolia: {
-            appId: 'UK3CF5QTPQ',
-            apiKey: "80ba324d818c04f2aceb0d4d73d74230",
-            indexName: "AffectiveCloud-CN",
+            appId: 'SWTEX2ARH4',
+            apiKey: "3022bc8a87e00b6c65ea515e65a1a598",
+            indexName: "AffectiveCloud-International",
         },
         navbar: {
-            title: '情感云平台开发文档',
+            title: 'Development Documents for Entertech Affective Cloud',
             logo: {
-                alt: '情感云平台开发文档',
+                alt: 'Development Documents for Entertech Affective Cloud',
                 src: 'img/logo.svg',
             },
             items: [
