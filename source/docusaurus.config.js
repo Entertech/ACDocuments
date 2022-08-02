@@ -11,9 +11,9 @@ module.exports = {
     projectName: 'affectivecloud', // Usually your repo name.
     themeConfig: {
         algolia: {
-            appId: 'TYRKKX6ZRP',
-            apiKey: "a2b2ad8782d5e2ee790c62c23565e23d",
-            indexName: "tDCS-international",
+            appId: 'UK3CF5QTPQ',
+            apiKey: "80ba324d818c04f2aceb0d4d73d74230",
+            indexName: "AffectiveCloud-CN",
         },
         navbar: {
             title: '情感云平台开发文档',
