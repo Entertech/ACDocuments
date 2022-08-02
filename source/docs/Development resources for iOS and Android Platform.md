@@ -14,6 +14,8 @@ Our SDK is fully packaged, and you can quickly start development with the help o
 | Android | [Device management SDK](https://github.com/Entertech/Enter-Biomodule-BLE-Android-SDK) | Management device connection (including the UI of the connection interface), data collection and firmware upgrade functions | Complete development |
 | | [Affective cloud connection SDK](https://github.com/Entertech/Enter-AffectiveCloud-Android-SDK) | Connect to the Enter affective cloud platform. Authenticate the user, collect the data from the device, send to the cloud platform and receive the returned processing results| Development completed |
 | | [Real-time data and report UI SDK](https://github.com/Entertech/Enter-UIComponent-Android-SDK) | The real-time data UI and the report UI | Completed Development |
+| PC (Python) | [Device management SDK](https://github.com/Entertech/Enter-Biomodule-BLE-PC-SDK) | Management device connection, data collection | Complete development |
+| | [Affective cloud connection SDK](https://github.com/Entertech/Enter-AffectiveCloud-PC-SDK) | Connect to the Enter affective cloud platform. Authenticate the user, collect the data from the device, send to the cloud platform and receive the returned processing results| Development completed |
 
 ## Demo list
 
@@ -28,3 +30,5 @@ You can develop quickly based on the demo.
 | Android | [Device management demo](https://github.com/Entertech/Enter-Biomodule-BLE-Android-SDK/tree/master/demo) | Demo device connection (including the UI of the connection interface), functions such as data monitoring and firmware upgrade | Development completed |
 | | [Affective cloud connection demo](https://github.com/Entertech/Enter-AffectiveCloud-Android-SDK/tree/master/demo) | Demonstration of connecting to the affective cloud platform and authenticating users, collecting data from the device, send the data to the cloud platform and receive the returned processing results | Development completed |
 | | [Real-time data and report UI Demo](https://github.com/Entertech/Enter-UIComponent-Android-SDK) | Demonstrate the analysis data returned by the affective cloud platform and the UI of real-time data and the final report | Completed Development |
+| PC (Python) | [Device management demo](https://github.com/Entertech/Enter-Biomodule-BLE-PC-SDK/tree/main/examples) | Demo device connection, functions such as data monitoring | Development completed |
+| | [Affective cloud connection demo](https://github.com/Entertech/Enter-AffectiveCloud-PC-SDK/tree/main/examples) | Demonstration of connecting to the affective cloud platform and authenticating users, collecting data from the device, send the data to the cloud platform and receive the returned processing results | Development completed |
