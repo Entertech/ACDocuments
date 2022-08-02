@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+
+  tdcs-docs-scrapy:
+    image: algolia/docsearch-scraper:v1.16.0
+    volumes: 
+      - ./scrapy.json:/etc/ds-scrapy.json
+    environment: 
+      APPLICATION_ID: ''
+      API_KEY: ''
+      CONFIG: "{\"index_name\":\"tDCS\",\"sitemap_urls\":[\"http://10.0.0.162:3000/sitemap.xml\"],\"stop_urls\":[],\"selectors\":{\"lvl0\":{\"selector\":\"//*[@class='navbar__title'][1]/text()\",\"type\":\"xpath\",\"global\":true,\"default_value\":\"Documentation\"},\"lvl1\":\"header h1\",\"lvl2\":\"article h2\",\"lvl3\":\"article h3\",\"lvl4\":\"article h4\",\"lvl5\":\"article h5, article td:first-child\",\"lvl6\":\"article h6\",\"text\":\"article p, article li, article td:last-child\"}}"
