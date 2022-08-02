@@ -35,4 +35,4 @@ _echo:
 	@read -p "按任意键继续..."
 
 updatex: _echo
-	docker buildx build --build-arg REPO --platform linux/amd64 --push -t ${REGISTRY}/ac-docs${ENVFLAG}:${VERSION}${BUILD_VERSION} .
+	docker buildx build --build-arg REPO=${REPO} --build-arg BRANCH=${BRANCH} --platform linux/amd64 --push -t ${REGISTRY}/ac-docs${ENVFLAG}:${VERSION}${BUILD_VERSION} .
