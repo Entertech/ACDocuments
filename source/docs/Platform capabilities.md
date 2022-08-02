@@ -1,8 +1,14 @@
+---
+sidebar_position: 3
+hide_title: true
+slug: /capacity
+---
+
 # Platform capabilities
 ## Services Offered
 
 | computing Type | computing Services | Development Status |
-| --- | --- | --- | 
+| --- | --- | --- |
 | Bio-data Analysis Services | EEG | Released |
 || Heart Rate | Released |
 | Affective computing Services | Attention | Released |

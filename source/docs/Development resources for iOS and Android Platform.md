@@ -1,3 +1,9 @@
+---
+sidebar_position: 2
+hide_title: true
+slug: /resource
+---
+
 # Development resources for iOS and Android Platform
 
 We have prepared comprehensive development resources for the iOS and Android platforms. The development kit covers hardware connection, data analysis, Affective Cloud connection, and UI controls. SDKs are all packaged independently, and you can use them on demand according to the actual needs of your own app development.

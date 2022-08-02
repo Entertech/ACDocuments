@@ -12,7 +12,8 @@ WORKDIR /docs
 ARG REPO
 ARG BRANCH
 
-RUN git clone $REPO Documents \
+RUN echo "Update 2022-08-02 to current date" \
+&& git clone $REPO Documents \
 && cd Documents \
 && git checkout $BRANCH
 
