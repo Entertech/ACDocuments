@@ -12,7 +12,8 @@ WORKDIR /docs
 ARG REPO
 ARG BRANCH
 
-RUN git clone $REPO Documents \
+RUN echo "2022-08-05 16:40:00" \
+&& git clone $REPO Documents \
 && cd Documents \
 && git checkout $BRANCH
 
