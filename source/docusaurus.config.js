@@ -58,6 +58,7 @@ const config = {
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
             algolia: {
+                contextualSearch: false,
                 appId: 'UK3CF5QTPQ',
                 apiKey: "80ba324d818c04f2aceb0d4d73d74230",
                 indexName: "AffectiveCloud-CN",
